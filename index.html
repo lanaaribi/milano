@@ -1,64 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Website</title>
+
+  <title>Candidature – Milan Exchange</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.8;
     }
 
-    .card {
-      background: white;
-      max-width: 600px;
-      margin: auto;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #0077cc;
-    }
-
-    button {
-      background: #0077cc;
+    header {
+      background: #111;
       color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
+      padding: 80px 20px;
+      text-align: center;
     }
 
-    button:hover {
-      background: #005fa3;
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: normal;
+    }
+
+    header p {
+      margin-top: 15px;
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 60px 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    p {
+      margin-bottom: 28px;
+      font-size: 1.08rem;
+    }
+
+    .quote {
+      border-left: 4px solid #111;
+      padding-left: 20px;
+      margin: 40px 0;
+      font-style: italic;
+      color: #444;
+    }
+
+    figure {
+      margin: 50px 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="card">
-    <h1>Hello GitHub Pages 👋</h1>
+  <header>
+    <h1>Milan Exchange</h1>
+    <p>Candidature de Lana</p>
+  </header>
 
-    <p>This is my first HTML page hosted on GitHub.</p>
+  <main>
 
-    <button onclick="showMessage()">
-      Click Me
-    </button>
-  </div>
+    <p>
+      Dans le cadre de l'échange professionnel proposé par JIN avec l'agence MyPR à Milan,
+      je vous prie de trouver ci-dessous ma candidature.
+    </p>
 
-  <script>
-    function showMessage() {
-      alert("Your website is working!");
-    }
-  </script>
+    <div class="quote">
+      « Ainsi, tout comme la banane de Comedian, de l'artiste Maurizio Cattelan,
+      cette candidature est immatérielle. »
+    </div>
+
+    <p>
+      <em>Comedian</em> est une œuvre qui a suscité énormément de débats sur la valeur,
+      la propriété et le rôle de l'art dans la société.
+    </p>
+
+    <p>
+      Personnellement, je ne suis pas particulièrement aficionada de la banane,
+      ni de l'art conceptuel, mais j'ai trouvé que cette œuvre pouvait constituer
+      un point d'entrée engageant sur la spéculation et le « battage ».
+    </p>
+
+    <figure>
+      <img src="images/comedian.jpg" alt="Comedian - Maurizio Cattelan">
+      <figcaption>
+        Maurizio Cattelan – <em>Comedian</em>
+      </figcaption>
+    </figure>
+
+    <p>
+      Le saviez-vous ? Chaque année, l'Union européenne propose aux citoyens européens
+      âgés de 18 ans de participer à un concours pour remporter un Pass Interrail.
+    </p>
+
+    <p>
+      Voilà par quel biais j'ai découvert, tout juste majeure,
+      la ville de Milan pour la première fois.
+    </p>
+
+    <p>
+      Près de huit ans plus tard, mon employeur propose justement
+      de réaliser un échange professionnel à Milan.
+    </p>
+
+    <p>
+      Mais cette fois-ci, j'ai une vision bien plus claire de ce que je souhaite y faire :
+      m'immerger dans la culture d'une autre entreprise,
+      découvrir d'autres façons de faire et de vivre.
+    </p>
+
+    <figure>
+      <img src="images/love-sculpture.jpg" alt="LOVE sculpture Milan">
+      <figcaption>
+        “L.O.V.E.” de Maurizio Cattelan, situé face à la Bourse de Milan.
+      </figcaption>
+    </figure>
+
+    <p>
+      C'est dans cet esprit que j'aborderai cet échange à Milan :
+      avec curiosité, ouverture et regard critique.
+    </p>
+
+    <p>
+      Merci d'avoir pris le temps de lire ma candidature.
+    </p>
+
+    <footer>
+      Mes salutations les plus sincères,<br>
+      Lana
+    </footer>
+
+  </main>
 
 </body>
 </html>
